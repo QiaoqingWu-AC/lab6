@@ -1,6 +1,8 @@
-<html class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr">
+<!-- Identify page language is "en" -->
+<html lang="en" class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr">
 <head>
-	<title>Untitled</title>
+  <!-- Add a descriptive page title -->
+	<title>Hi/Max Real Estate</title>
 	<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
 	<script
 		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/deps/jsonpointer.min.js"></script>
@@ -27,9 +29,11 @@
 
 <body>
 
-	<div> <!-- start of search-->
-		<div id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
-			<h2>Search</h2>
+  <!-- Banner landmark with a search form -->
+	<div role="banner" aria-labelledby="banner with search form"> <!-- start of search-->
+		<div id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4" aria-label="search title">
+      <!-- Identified h2 (not visible) labels the search form -->
+			<h2 id="search title">Search</h2>
 
 			<form action="/en/sr/srb.html" method="get" name="cse-search-box" role="search">
 				<div class="form-group wb-srch-qry">
@@ -39,14 +43,16 @@
 						value="" size="34" maxlength="170" placeholder="Search Hi/Max.ca">
 				</div>
 				<div class="form-group submit">
-					<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span
+          <!-- Labels the interactive search button -->
+					<button aria-label="submit search" type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span
 							class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
 				</div>
 			</form>
 
 		</div> <!--end of search-->
 	</div>
-	<div> <!-- start of header-->
+  <!-- Header landmark with a navigation bar -->
+	<div role="header" aria-labelledby="header with navigation bar"> <!-- start of header-->
 
 		<div class="app-bar">
 			<div class="container">
@@ -59,7 +65,7 @@
 			</div>
 		</div>
 
-		<div id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
+		<div role="navigation" aria-label="main navigation bar" id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
 			class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
 			typeof="SiteNavigationElement">
 			<div class="pnl-strt container nvbar">
@@ -79,7 +85,6 @@
 					</ul>
 				</div>
 			</div>
-
 
 		</div> <!-- end of main navigation-->
 
