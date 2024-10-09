@@ -24,6 +24,16 @@
       width: 30px;
       fill: #91929a;
     }
+
+    #thead-1 {
+      background-color: black;
+      color: white;
+    }
+
+    .thead-2 {
+      background-color: darkgray;
+    }
+
 	</style>
 </head>
 
@@ -129,12 +139,12 @@
         <table class="table table-bordered">
           <caption>Stats of Hi/Max</caption>
           <thead>
-            <tr>
+            <tr id="thead-1">
               <th rowspan="2" id="year" scope="col">Year</th>
               <th colspan="2" id="sp" scope="colgroup">Sold Properties</th>
               <th colspan="2" id="asp" scope="colgroup">Average selling price</th>
             </tr>
-            <tr>
+            <tr class="thead-2">
               <th id="qc" headers="sp" scope="col">Quebec</th>
               <th id="on" headers="sp" scope="col">Ontario</th>
               <th id="single" headers="asp" scope="col">Single house</th>
@@ -143,14 +153,14 @@
           </thead>
           <tbody>
             <tr>
-            <th id="2021" headers="year" scope="row">2021</th>
+            <th id="2021" headers="year" scope="row" class="thead-2">2021</th>
             <td headers="2021 qc">50</td>
             <td headers="2021 on">100</td>
             <td headers="2021 single">$500,00</td>
             <td headers="2021 condo">$189,000</td>
           </tr>
           <tr>
-            <th id="2022" headers="year" scope="row">2022</th>
+            <th id="2022" headers="year" scope="row" class="thead-2">2022</th>
             <td headers="2022 qc">100</td>
             <td headers="2022 on">200</td>
             <td headers="2022 single">$780,00</td>
